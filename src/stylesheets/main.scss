@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@use
+  './abstracts' as *;
+
+// 2. Base stuff
+@use
+  './base' as *;
+
+// 3. Layout-related sections
+@use
+  './layout' as *;
+
+// 4. Components
+@use
+  './components/button' as *;

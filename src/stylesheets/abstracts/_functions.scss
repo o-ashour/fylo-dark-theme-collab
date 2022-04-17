@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+@use './variables' as *;
+
+/// font weights function
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+};

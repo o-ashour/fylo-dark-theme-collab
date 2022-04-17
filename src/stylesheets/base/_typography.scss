@@ -1,0 +1,22 @@
+/**
+ * Basic typography style for copy text
+ */
+
+@use '../abstracts' as *;
+
+body {
+  font-family: $font-2;
+  font-weight: weight('regular');
+  font-size: $base-size;
+}
+
+.header__links,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  font-family: $font-1;
+}

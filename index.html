@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Fylo landing page with dark theme and features grid
+    </title>
+    <link rel="stylesheet" href="src/stylesheets/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <img src="src/images/logo.svg" alt="" class="header__logo" />
+        <ul class="header__links">
+          <li class="header__link">Features</li>
+          <li class="header__link">Team</li>
+          <li class="header__link">Sign In</li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="wrapper">
+        <img
+          src="src/images/illustration-intro.png"
+          alt="illustration"
+          class="hero__img"
+        />
+        <h1 class="hero__title">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="hero__desc">
+          Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workers.
+        </p>
+        <button class="hero__btn btn btn--primary">Get Started</button>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="wrapper">
+        <div class="feature">
+          <img
+            src="src/images/icon-access-anywhere.svg"
+            alt=""
+            class="feature__img"
+          />
+          <h3 class="feature__title">Access your files, anywhere</h3>
+          <p class="feature__desc">
+            The ability to use a smartphone, tablet, or computer to access your
+            account means your files follow you everywhere.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="src/images/icon-security.svg" alt="" class="feature__img" />
+          <h3 class="feature__title">Security you can trust</h3>
+          <p class="feature__desc">
+            2-factor authentication and user-controlled encryption are just a
+            couple of the security features we allow to help secure your files.
+          </p>
+        </div>
+        <div class="feature">
+          <img
+            src="src/images/icon-collaboration.svg"
+            alt=""
+            class="feature__img"
+          />
+          <h3 class="feature__title">Real-time collaboration</h3>
+          <p class="feature__desc">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="src/images/icon-any-file.svg" alt="" class="feature__img" />
+          <h3 class="feature__title">Store any type of file</h3>
+          <p class="feature__desc">
+            Whether you're sharing holidays photos or work documents, Fylo has
+            you covered allowing for all file types to be securely stored and
+            shared.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="c2a">
+      <div class="wrapper">
+        <img
+          src="src/images/illustration-stay-productive.png"
+          alt="illustration"
+          class="c2a__img"
+        />
+        <div class="c2a__content">
+          <h2 class="c2a__title">Stay productive, wherever you are</h2>
+          <p class="c2a__desc">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs. Securely share files
+            and folders with friends, family and colleagues for live
+            collaboration. No email attachments required.
+          </p>
+          <button class="c2a__btn btn btn--secondary">
+            See how Fylo works
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="wrapper">
+        <!-- single testimonial -->
+        <div class="testimonial">
+          <p class="testimonial__desc">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="testimonial__author">
+            <img
+              src="src/images/profile-1.jpg"
+              alt="avatar"
+              class="author__avatar"
+            />
+            <div class="testimonial__author__info">
+              <h3 class="author__name">Satish Patel</h3>
+              <span class="author__desg">Founder & CEO, Huddle</span>
+            </div>
+          </div>
+        </div>
+        <!-- single testimonial end -->
+
+        <!-- single testimonial -->
+        <div class="testimonial">
+          <p class="testimonial__desc">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="testimonial__author">
+            <img
+              src="src/images/profile-2.jpg"
+              alt="avatar"
+              class="author__avatar"
+            />
+            <div class="testimonial__author__info">
+              <h3 class="author__name">Bruce McKenzie</h3>
+              <span class="author__desg">Founder & CEO, Huddle</span>
+            </div>
+          </div>
+        </div>
+        <!-- single testimonial end -->
+
+        <!-- single testimonial -->
+        <div class="testimonial">
+          <p class="testimonial__desc">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="testimonial__author">
+            <img
+              src="src/images/profile-3.jpg"
+              alt="avatar"
+              class="author__avatar"
+            />
+            <div class="testimonial__author__info">
+              <h3 class="author__name">Iva Boyd</h3>
+              <span class="author__desg">Founder & CEO, Huddle</span>
+            </div>
+          </div>
+        </div>
+        <!-- single testimonial end -->
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="wrapper">
+        <div class="newsletter__content">
+          <h2 class="newsletter__title">Get early access today</h2>
+          <p class="newsletter__desc">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form class="newsletter__form">
+          <input type="email" />
+          <input type="submit" value="Get Started For Free" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="columns">
+          <div class="column">
+            <img src="src/images/logo.svg" alt="logo" class="footer__logo" />
+            <div class="footer__desc">
+              <i
+                ><img src="src/images/icon-location.svg" alt="location icon"
+              /></i>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <ul class="footer__links">
+              <li class="footer__link">
+                <i><img src="src/images/icon-phone.svg" alt="" /></i
+                >+1-543-123-4567
+              </li>
+              <li class="footer__link">
+                <i><img src="src/images/icon-email.svg" alt="" /></i>
+                example@fylo.com
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="footer__links">
+              <li class="footer__link">About Us</li>
+              <li class="footer__link">Jobs</li>
+              <li class="footer__link">Press</li>
+              <li class="footer__link">Blog</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="footer__links">
+              <li class="footer__link">Contact Us</li>
+              <li class="footer__link">Terms</li>
+              <li class="footer__link">Privacy</li>
+            </ul>
+          </div>
+          <div class="column">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

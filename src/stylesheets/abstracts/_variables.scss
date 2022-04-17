@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+/// font family
+
+// base font size
+$base-size: 14px;
+
+// Body
+$font-1: 'Raleway', sans-serif;
+
+// Headings, Call-to-actions, Header Navigation
+$font-2: 'Open Sans', sans-serif;
+
+/// font weights
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'semi-bold': 600,
+  'bold': 700,
+);
+
+/// Copy text color
+
+// Primary
+
+// intro and email sign up background
+$dark-blue-1: hsl(217, 28%, 15%);
+// main background
+$dark-blue-2: hsl(218, 28%, 13%);
+// footer background
+$dark-blue-3: hsl(216, 53%, 9%);
+// testimonials background
+$dark-blue-4: hsl(219, 30%, 18%);
+
+$primary-1: $dark-blue-1;
+$primary-2: $dark-blue-2;
+$primary-3: $dark-blue-3;
+$primary-4: $dark-blue-4;
+
+
+// Accent
+
+// inside call-to-action gradient
+$cyan: hsl(176, 68%, 64%);
+// inside call-to-action gradient
+$blue: hsl(198, 60%, 50%);
+// error
+$light-red: hsl(0, 100%, 63%);
+
+$accent-1: $cyan;
+$accent-2: $blue;
+$accent-gradient: linear-gradient(to right, $cyan, $blue);
+$accent-error: $light-red;
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+
+$neutral: $white;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: ('small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
