@@ -2,7 +2,10 @@
  * Basic typography style for copy text
  */
 
-@use '../abstracts' as *;
+@use '../config' as *;
+
+// Raleway and Open Sans fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
 
 body {
   font-family: $font-2;
