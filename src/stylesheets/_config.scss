@@ -66,3 +66,8 @@ $breakpoints: ('small': 320px,
   'medium': 768px,
   'large': 1024px,
 ) !default;
+
+// mixin for left-right padding for whole document
+@mixin docSidePadding{
+  padding: 0 1.65em;
+};
