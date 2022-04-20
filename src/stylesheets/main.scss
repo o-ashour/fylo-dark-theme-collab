@@ -1,17 +1,166 @@
 @charset "UTF-8";
 
-// 1. Configuration (variables, functions, etc)
+// Configuration (variables, functions, etc)
 @use
   './config' as *;
 
-// 2. Base stuff
-@use
-  './base' as *;
+// import resets
+@use 
+  './reset' as *;
 
-// 3. Layout-related sections
-@use
-  './layout' as *;
 
-// 4. Components
-@use
-  './components/button' as *;
+// Raleway and Open Sans fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+body {
+  background: $dark-blue-2;
+  color: $neutral;
+  /* Open Sans font */
+  font-family: $font-2;
+  font-weight: weight('regular');
+  /* base font-size is 14px */
+  font-size: $base-size;
+}
+
+
+.header__links,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  /* raleway font for headers and headings */
+  font-family: $font-1;
+}
+
+// styles for main buttons
+.btn--primary {
+  // i don't think this the right background colour
+  background: $accent-gradient;
+  border: none;
+  color: $neutral;
+  padding: 0.8em 5em;
+  border-radius: 2em;
+  font-size: 0.7rem;
+  font-weight: weight('semi-bold');
+}
+
+/* styles for footer section */
+footer {
+   background: $dark-blue-3;
+   @include docSidePadding;
+ }
+  
+ .footer {
+   padding-bottom: 2.5em;
+  
+   &__logo {
+     width: 12em;
+     padding-top: 4em;
+     margin: 0 1em 2.25em 0.75em;
+   }
+  
+   &__desc {
+     margin-bottom: 1.25em;
+  
+     i {
+        float: left;
+  
+        img {
+          width: 1em;
+        }
+      }
+  
+      p {
+        padding-left: 3em;
+      }
+    }
+  
+    &__link {
+      margin-bottom: 1.25em;
+      
+      i {
+        float: left;
+        padding-right: 2em;
+  
+        img {
+          width: 1em;
+        }
+      }
+    }
+  
+    .column {
+      &:nth-child(1), &:nth-child(2) {
+        i {
+          padding-top: 0.3em;
+        }
+      }
+      &:nth-child(2) {
+        margin-bottom: 4.5em;
+      }
+  
+      &:nth-child(3) {
+        margin-bottom: 3.5em;
+      }
+  
+      &:nth-child(4) {
+        margin-bottom: 4.5em;
+      }
+  
+      &:nth-child(5) {
+        ul {
+          text-align: center;
+        }
+        li {
+          display: inline-block;
+          margin-right: 0.5em;
+          padding: 0.3em 0;
+          width: 2em;
+          border: 0.01em solid $neutral;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+
+  /**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* helper classes */
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
