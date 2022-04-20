@@ -39,7 +39,6 @@ h6,
 
 
 .btn--primary {
-  // i don't think this the right background colour
   background: $accent-gradient;
   border: none;
   color: $neutral;
@@ -49,11 +48,41 @@ h6,
   font-weight: weight('semi-bold');
 }
 
+/* styles for testimonial section */
+.testimonial {
+  background: $dark-blue-4;
+  margin: 1.75em 2.75em;
+  padding: 1.75em 1.5em 1.5em;
+  border-radius: .2rem;
+
+  &__desc {
+    font-size: 0.75rem;
+    line-height: 1.75;
+    // margin-bottom: 0.2em;
+  }
+
+  &__author {
+    margin-top: 1.5em;
+  }
+
+  &__author__info {
+    // margin-left: 1em;
+  }
+
+  .author__avatar {
+    width: 2.75em;
+    border-radius: 50%;
+    float: left;
+    margin-right: 0.75em;
+  }
+}
+
 /* styles for newsletter sign-up section */
 .newsletter {
   background: $dark-blue-1;
-  margin: 0 1.65em;
+  margin: 10em 1.65em 1em;
   padding: 2em;
+  border-radius: .2rem;
 
   &__content {
     text-align: center;
@@ -98,7 +127,6 @@ h6,
 
   }
 }
-
 
 /* styles for footer section */
 footer {
