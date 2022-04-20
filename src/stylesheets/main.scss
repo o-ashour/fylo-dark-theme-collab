@@ -35,7 +35,9 @@ h6,
   font-family: $font-1;
 }
 
-// styles for main buttons
+/* styles for main buttons */
+
+
 .btn--primary {
   // i don't think this the right background colour
   background: $accent-gradient;
@@ -46,6 +48,57 @@ h6,
   font-size: 0.7rem;
   font-weight: weight('semi-bold');
 }
+
+/* styles for newsletter sign-up section */
+.newsletter {
+  background: $dark-blue-1;
+  margin: 0 1.65em;
+  padding: 2em;
+
+  &__content {
+    text-align: center;
+    margin-bottom: 1.75em;
+  }
+
+  &__title {
+    margin-bottom: 1em;
+  }
+
+  &__desc {
+    // margin-bottom: 1.5em;
+  }
+
+  &__form {
+    /* styles for form email input */
+    [type=email], [type=submit] {
+      border: none;
+      width: 100%;
+      padding: 1.2em 2.4em;
+      border-radius: 2em;
+      font-size: 0.7rem;
+    }
+
+    [type=email]:focus {
+      outline: none;
+    }
+
+    ::placeholder {
+      color: rgba(100,100,100);
+      font-weight: weight('regular');
+      font-size: 0.7rem;
+    }
+
+    /* styles for email submit button */
+    [type=submit] {
+      background: $accent-gradient;
+      color: $neutral;
+      font-weight: weight('semi-bold');
+      margin-top: 1.75em;
+    }
+
+  }
+}
+
 
 /* styles for footer section */
 footer {
