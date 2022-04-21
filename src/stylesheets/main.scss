@@ -20,6 +20,7 @@ body {
   font-weight: weight('regular');
   /* base font-size is 14px */
   font-size: $base-size;
+  overflow-x: hidden;
 }
 
 
@@ -48,25 +49,45 @@ h6,
   font-weight: weight('semi-bold');
 }
 
+/* styles for call-to-action section */
+.c2a {
+  margin-bottom: 8em;
+}
+
 /* styles for testimonial section */
+.testimonials {
+  padding-top: 1.5em;
+
+  /* pseudo class for placing quote background */
+  &::before {
+    background: url('src/assets/images/bg-quotes.png');
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    height: 2em;
+    width: 100%;
+    background-size: 1.5em;
+    left: 3em;
+    z-index: -1;
+  }
+}
 .testimonial {
   background: $dark-blue-4;
   margin: 1.75em 2.75em;
   padding: 1.75em 1.5em 1.5em;
   border-radius: .2rem;
 
+  &:nth-child(1) {
+    margin-top: 1.05em;
+  }
+
   &__desc {
     font-size: 0.75rem;
     line-height: 1.75;
-    // margin-bottom: 0.2em;
   }
 
   &__author {
     margin-top: 1.5em;
-  }
-
-  &__author__info {
-    // margin-left: 1em;
   }
 
   .author__avatar {
@@ -74,6 +95,20 @@ h6,
     border-radius: 50%;
     float: left;
     margin-right: 0.75em;
+    overflow: hidden;
+  }
+
+  .author__name {
+    /* adjusts the h3 headings here to Open Sans font instead of default Raleway */
+    font-family: $font-2;
+    font-size: 0.9rem;
+    font-weight: weight('medium');
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.01em;
+  }
+
+  .author__desc {
+    font-size: 0.7rem;
   }
 }
 
@@ -214,6 +249,7 @@ footer {
   clear: both;
   content: '';
   display: table;
+  overflow: hidden;
 }
 
 /* helper classes */
