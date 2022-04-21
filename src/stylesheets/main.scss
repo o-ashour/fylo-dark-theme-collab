@@ -13,6 +13,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
 
 body {
+  // background: url('src/assets/images/bg-curvy-mobile.svg') no-repeat center;
+  // background-size: contain;
   background: $dark-blue-2;
   color: $neutral;
   /* Open Sans font */
@@ -21,6 +23,15 @@ body {
   /* base font-size is 14px */
   font-size: $base-size;
   overflow-x: hidden;
+
+  &::before {
+    // content: '';
+    // width: 100%;
+    // height: 100vh;
+    // position: absolute;
+    // background: url('src/assets/images/bg-curvy-mobile.svg') no-repeat center;
+    // background-size: contain;
+  }
 }
 
 
@@ -36,17 +47,64 @@ h6,
   font-family: $font-1;
 }
 
-/* styles for main buttons */
+.header {
+  background-color: $dark-blue-1;
+  @include docSidePadding;
+  padding-top: 2em;
+  padding-bottom: 2.25em;
 
+  &__logo {
+    width: 6.2em;
+  }
 
-.btn--primary {
-  background: $accent-gradient;
-  border: none;
-  color: $neutral;
-  padding: 0.8em 5em;
-  border-radius: 2em;
-  font-size: 0.7rem;
-  font-weight: weight('semi-bold');
+  &__links {
+    display: inline-block;
+    float: right;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 0.75rem;
+    margin-left: 1.2em;
+  }
+}
+
+/* styles for hero section */
+.hero {
+  text-align: center;
+  margin-bottom: 8em;
+  @include docSidePadding;
+  padding-top: 1em;
+  background-color: $dark-blue-1;
+
+  &__img {
+    margin-bottom: 1.75em;
+  }
+
+  &__title {
+    margin-bottom: .65em;
+    font-size: 1.3rem;
+    font-weight: weight('semi-bold');
+    line-height: 1.6;
+  
+  }
+
+  &__desc {
+    margin-bottom: 2em;
+  }
+
+  /* styles for main buttons */
+  .btn--primary {
+    width: 77%;
+    background: $accent-gradient;
+    border: none;
+    color: $neutral;
+    margin-bottom: 2em;
+    padding: 1.1em 5em;
+    border-radius: 2em;
+    font-size: 0.8rem;
+    font-weight: weight('semi-bold');
+  }
 }
 
 /* styles for feature section */
@@ -214,11 +272,13 @@ h6,
 }
 
 /* styles for footer section */
-footer {
-   @include docSidePadding;
- }
+// footer {
+//    @include docSidePadding;
+//  }
   
  .footer {
+   @include docSidePadding;
+   background: $dark-blue-3;
    padding-bottom: 2.5em;
   
    &__logo {
