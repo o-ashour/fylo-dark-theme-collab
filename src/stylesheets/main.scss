@@ -49,9 +49,59 @@ h6,
   font-weight: weight('semi-bold');
 }
 
+/* styles for feature section */
+.features {
+  text-align: center;
+  @include docSidePadding;
+  margin-bottom: 10em;
+
+  .feature {
+    &__img {
+      margin-bottom: 1.75em;
+      width: 4.2em;
+    }
+
+    &__title {
+      margin-bottom: 0.7em;
+      font-size: 1.1rem;
+      font-weight: weight('semi-bold');
+    }
+
+    &__desc {
+      margin-bottom: 6em;
+    }
+  }
+}
+
 /* styles for call-to-action section */
 .c2a {
   margin-bottom: 8em;
+  @include docSidePadding;
+
+  &__content {
+    margin-top: 2.5em;
+  }
+
+  &__title {
+    font-size: 1.05rem;
+    margin-bottom: 1em;
+    margin-left: 0.25em;
+    font-weight: weight('semi-bold');
+  }
+
+  .btn--secondary {
+    padding: 0 0 0.4em;
+    color: $accent-1;
+    background: transparent;
+    border: none;
+    border-bottom: 0.1em solid;
+
+    i {
+      position: relative;
+      top: 0.28em;
+      margin-left: 0.25em;
+    }
+  }
 }
 
 /* styles for testimonial section */
@@ -165,7 +215,6 @@ h6,
 
 /* styles for footer section */
 footer {
-   background: $dark-blue-3;
    @include docSidePadding;
  }
   
